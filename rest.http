@@ -1,0 +1,32 @@
+GET http://localhost:3055
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MjgzNDM4MzUsImV4cCI6MTcyODM0Mzg5NSwiYXVkIjoiNjcwNDZmMWJjMWEwMjM3MWRiNjg0NGZhIiwiaXNzIjoibGl5YWJwYWdlLmNvbSJ9.59iexfmCSIa7Po5fIB1edgecsR9SZX5kD1jKpuxKCiw
+###Login Route
+POST http://localhost:3055/auth/login
+Content-Type: application/json
+
+{
+    "email": "coldsisintern@gmail.com",
+    "password": "12345678"
+}
+
+
+###Register Route
+POST http://localhost:3055/auth/register
+Content-Type: application/json
+
+{
+    "email": "newusersd@gmail.com",
+    "password": "12345678"
+}
+
+###Refresh token Route
+POST http://localhost:3055/auth/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken": // using refreshToken to generate accessToken
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MjgzNDM4MzUsImV4cCI6MTc1OTkwMTQzNSwiYXVkIjoiNjcwNDZmMWJjMWEwMjM3MWRiNjg0NGZhIiwiaXNzIjoibGl5YWJwYWdlLmNvbSJ9.JsPKxENH-WFn0q4E7Y5dYfZDEK8MNN8u875CwG9tcL8"
+}
+
+###Logout Route
+DELETE http://localhost:3055/auth/logout

@@ -1,0 +1,25 @@
+{
+  "name": "auth_tutorial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "http-errors": "^2.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongo": "^0.1.0",
+    "mongodb": "^6.9.0",
+    "mongoose": "^8.7.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.7"
+  }
+}
