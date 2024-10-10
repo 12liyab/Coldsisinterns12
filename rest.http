@@ -5,7 +5,7 @@ POST http://localhost:3055/auth/login
 Content-Type: application/json
 
 {
-    "email": "coldsisintern@gmail.com",
+    "email": "newuser@gmail.com",
     "password": "12345678"
 }
 
@@ -15,7 +15,7 @@ POST http://localhost:3055/auth/register
 Content-Type: application/json
 
 {
-    "email": "newusersd@gmail.com",
+    "email": "inters@gmail.com",
     "password": "12345678"
 }
 
